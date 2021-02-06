@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "events",
   "info": {
-    "name": "Event"
+    "name": "Event",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,29 @@
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "Picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Contribution": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "text"
     }
   }
 }
