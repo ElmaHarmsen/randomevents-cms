@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_categories",
+  "info": {
+    "name": "EventCategories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "events": {
+      "collection": "event",
+      "via": "event_categories",
+      "dominant": true
+    },
+    "Category": {
+      "type": "string"
+    }
+  }
+}

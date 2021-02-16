@@ -36,6 +36,10 @@
     },
     "Description": {
       "type": "text"
+    },
+    "event_categories": {
+      "via": "events",
+      "collection": "event-categories"
     }
   }
 }
