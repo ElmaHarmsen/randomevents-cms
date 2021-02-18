@@ -30,6 +30,9 @@
     },
     "Workshop": {
       "type": "string"
+    },
+    "Introduction": {
+      "type": "string"
     }
   }
 }
