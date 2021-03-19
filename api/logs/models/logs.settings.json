@@ -33,6 +33,9 @@
     },
     "Introduction": {
       "type": "string"
+    },
+    "ConnectionLogs": {
+      "collection": "logs"
     }
   }
 }
